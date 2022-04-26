@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header name='Khayman'/>
+      <Footer email='khaymanaking@gmail.com'/>
     </div>
   );
 }
