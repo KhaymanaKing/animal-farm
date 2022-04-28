@@ -1,9 +1,18 @@
 import React from 'react';
-
-export default function Animal({ animal }) {
+import './Animal.css';
+export default function AnimalItem({ animal: { name, type, says, top, left } }) {
   return (
-    <div className={animal.name}>
-        
+    <div className= 'animalCard'
+      style={{
+        position: 'absolute',
+        top: top,
+        left: left,
+      }}
+    >
+      <p>{name}</p>
+      <img src= {`../images/${type}.svg`}/>  
+      <p>{says}</p>
+      
     </div>
   );
 }
